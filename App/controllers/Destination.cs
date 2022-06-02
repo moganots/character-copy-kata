@@ -1,4 +1,5 @@
 ﻿using App.interfaces;
+using App.utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,7 +27,10 @@ namespace App.controllers
         /// <param name="value">the character value to be written</param>
         public void WriteChar(char value)
         {
-
+            if (value.IsSet() && value.IsNewline())
+            {
+                Console.Write(value);
+            }
         }
 
         /// <summary>
@@ -35,7 +39,10 @@ namespace App.controllers
         /// <param name="values">the character values to be written</param>
         public void WriteChars(char[] values)
         {
-
+            foreach(char value in values)
+            {
+                WriteChar(value);
+            }
         }
         #endregion Methods
     }

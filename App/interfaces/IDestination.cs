@@ -11,6 +11,7 @@ namespace App.interfaces
     /// </summary>
     public interface IDestination
     {
+        #region Methods
         /// <summary>
         /// Writes the provided character
         /// </summary>
@@ -22,5 +23,6 @@ namespace App.interfaces
         /// </summary>
         /// <param name="values">the character values to be written</param>
         void WriteChars(char[] values);
+        #endregion Methods
     }
 }

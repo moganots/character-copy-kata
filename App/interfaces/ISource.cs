@@ -11,6 +11,14 @@ namespace App.interfaces
     /// </summary>
     public interface ISource
     {
+        #region Properties
+        /// <summary>
+        /// Gets or Sets the source value to be used for processing
+        /// </summary>
+        string Value { get; set; }
+        #endregion Properties
+
+        #region Methods
         /// <summary>
         /// Gets (Reads) a single character from a source string / value
         /// </summary>
@@ -22,5 +30,6 @@ namespace App.interfaces
         /// <param name="count">the number of characters to get (read)</param>
         /// <returns>char[]</returns>
         char[] ReadChars(int count);
+        #endregion Methods
     }
 }

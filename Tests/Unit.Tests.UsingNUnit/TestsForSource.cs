@@ -17,22 +17,25 @@ namespace Unit.Tests.UsingNUnit
         [Test]
         public void Test_When_Source_ReadChar_IsCalled()
         {
+            source.Value = "A";
             var result = source.ReadChar();
-            Assert.Pass(result.ToString());
-        }
-
-        [Test]
-        public void Test_When_Source_ReadChars_With_Count_Parameter_IsCalled()
-        {
-            var result = source.ReadChars(2);
-            Assert.Pass(result.ToString());
+            Assert.IsTrue(result == 'A');
         }
 
         [Test]
         public void Test_When_Source_ReadChar_IsCalled_With_Newline()
         {
-            var result = source.ReadChars('\n');
-            Assert.Pass(result.ToString());
+            source.Value = "\n";
+            var result = source.ReadChar();
+            Assert.IsTrue(result == ' ');
+        }
+
+        [Test]
+        public void Test_When_Source_ReadChars_With_Count_Parameter_IsCalled()
+        {
+            source.Value = "ABCDEFG\n";
+            var result = source.ReadChars(1).ToString();
+            Assert.IsTrue(result == "AB");
         }
     }
 }

@@ -15,6 +15,7 @@ namespace Unit.Tests.UsingNUnitWithMoq
         public void Setup()
         {
             source = new Mock<ISource>();
+            source.Setup(src => src.Value).Returns("ABCDEF\n");
             destination = new Mock<IDestination>();
             copier = new Mock<ICopier>(source.Object, destination.Object);
         }
