@@ -20,8 +20,9 @@ namespace Unit.Tests.UsingNUnitWithMoq
         [Test]
         public void Test_When_Source_ReadChar_IsCalled()
         {
+            var expected = 'A';
             var result = source.Object.ReadChar();
-            Assert.IsTrue(result == 'A');
+            Assert.That(expected, Is.EqualTo(result));
         }
 
         [Test]
@@ -35,8 +36,10 @@ namespace Unit.Tests.UsingNUnitWithMoq
         [Test]
         public void Test_When_Source_ReadChar_IsCalled_With_Newline()
         {
+            source.Setup(s => s.Value).Returns("\n");
+            var expected = ' ';
             var result = source.Object.ReadChar();
-            Assert.IsTrue(result == ' ');
+            Assert.That(expected, Is.EqualTo(result));
         }
     }
 }
