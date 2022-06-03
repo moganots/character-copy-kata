@@ -27,8 +27,9 @@ namespace Unit.Tests.UsingNUnitWithMoq
         [Test]
         public void Test_When_Source_ReadChars_With_Count_Parameter_IsCalled()
         {
+            var expected = "AB".ToCharArray();
             var result = source.Object.ReadChars(2);
-            Assert.IsTrue(result.All(c => c == 'AB'));
+            Assert.That(expected, Is.EqualTo(result));
         }
 
         [Test]

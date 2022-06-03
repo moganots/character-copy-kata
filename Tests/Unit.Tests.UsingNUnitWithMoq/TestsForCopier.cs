@@ -21,15 +21,20 @@ namespace Unit.Tests.UsingNUnitWithMoq
         }
 
         [Test]
-        public void Test_Source_Copy_When_Copier_Copy_IsCalled()
+        public void success_when_Source_ReadChar_is_called_when_Copy_is_called()
         {
+            var expected = 'A';
             copier.Object.Copy();
+            Assert.That(expected, Is.EqualTo(source.Object.ReadChar()));
         }
 
         [Test]
-        public void Test_Source_Copy_With_Count_Parameter_When_Copier_Copy_IsCalled()
+        public void success_when_Destination_WriteChar_is_called_when_Copy_is_called()
         {
-            copier.Object.Copy(2);
+            var expected = 'A';
+            copier.Object.Copy();
+            Assert.That(expected, Is.EqualTo(source.Object.ReadChar()));
+            destination.Object.WriteChar(source.Object.ReadChar());
         }
     }
 }
