@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QXFGyQuBnEy0UFCJuLtM2zcVBzRpFmR1LUmbpHshEKBHWv5NKZHW9s3dtmAGO5O87cIeYdNthDguXtHeKkGg4g==",
+  "dgSpecHash": "FqW5p8yXw/NVz0KCb5lj3Dc01s2AHLf4GcLYq05LFUr0A5H5hZj7/wPAAfINMWQ8yS4Tbh7lpr+Du2bChSxuYA==",
   "success": true,
-  "projectFilePath": "C:\\Development\\CharacterCopyKata\\App\\App.csproj",
+  "projectFilePath": "C:\\Users\\A236978\\Documents\\character-copy-kata\\App\\App.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

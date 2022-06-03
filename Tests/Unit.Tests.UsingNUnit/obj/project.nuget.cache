@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "33+6g23w5j0cSJpzn0jW4BeJegK5n9pPEIxLO0kA/OnvKx/Ag3iVn0x1kS0GhCTnvSkyYvcjzNHpZhQgVJbhKg==",
+  "dgSpecHash": "vIVAMIx39NAm03YPETEC+wDMb3suRWz6xDUGlL/I7adr7x9n5tEgYHqGp7k0GUlK41Gbp3TDhfImpBPReGhOsg==",
   "success": true,
-  "projectFilePath": "C:\\Development\\CharacterCopyKata\\Tests\\Unit.Tests.UsingNUnit\\Unit.Tests.UsingNUnit.csproj",
+  "projectFilePath": "C:\\Users\\A236978\\Documents\\character-copy-kata\\Tests\\Unit.Tests.UsingNUnit\\Unit.Tests.UsingNUnit.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\A236978\\.nuget\\packages\\castle.core\\5.0.0\\castle.core.5.0.0.nupkg.sha512",
     "C:\\Users\\A236978\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",

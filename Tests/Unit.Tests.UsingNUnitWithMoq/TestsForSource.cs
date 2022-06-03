@@ -2,6 +2,7 @@ using App.controllers;
 using App.interfaces;
 using Moq;
 using NUnit.Framework;
+using System.Linq;
 
 namespace Unit.Tests.UsingNUnitWithMoq
 {
@@ -24,17 +25,17 @@ namespace Unit.Tests.UsingNUnitWithMoq
         }
 
         [Test]
+        public void Test_When_Source_ReadChars_With_Count_Parameter_IsCalled()
+        {
+            var result = source.Object.ReadChars(2);
+            Assert.IsTrue(result.All(c => c == 'AB'));
+        }
+
+        [Test]
         public void Test_When_Source_ReadChar_IsCalled_With_Newline()
         {
             var result = source.Object.ReadChar();
             Assert.IsTrue(result == ' ');
-        }
-
-        [Test]
-        public void Test_When_Source_ReadChars_With_Count_Parameter_IsCalled()
-        {
-            var result = source.Object.ReadChars(2).ToString();
-            Assert.IsTrue(result == "AB");
         }
     }
 }

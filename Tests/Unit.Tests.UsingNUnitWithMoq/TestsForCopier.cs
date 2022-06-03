@@ -31,11 +31,5 @@ namespace Unit.Tests.UsingNUnitWithMoq
         {
             copier.Object.Copy(2);
         }
-
-        [Test]
-        public void Test_Source_IsCalled_With_Newline()
-        {
-            copier.Object.Copy();
-        }
     }
 }

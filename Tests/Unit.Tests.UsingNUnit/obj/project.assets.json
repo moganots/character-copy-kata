@@ -4212,11 +4212,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Development\\CharacterCopyKata\\Tests\\Unit.Tests.UsingNUnit\\Unit.Tests.UsingNUnit.csproj",
+      "projectUniqueName": "C:\\Users\\A236978\\Documents\\character-copy-kata\\Tests\\Unit.Tests.UsingNUnit\\Unit.Tests.UsingNUnit.csproj",
       "projectName": "Unit.Tests.UsingNUnit",
-      "projectPath": "C:\\Development\\CharacterCopyKata\\Tests\\Unit.Tests.UsingNUnit\\Unit.Tests.UsingNUnit.csproj",
+      "projectPath": "C:\\Users\\A236978\\Documents\\character-copy-kata\\Tests\\Unit.Tests.UsingNUnit\\Unit.Tests.UsingNUnit.csproj",
       "packagesPath": "C:\\Users\\A236978\\.nuget\\packages\\",
-      "outputPath": "C:\\Development\\CharacterCopyKata\\Tests\\Unit.Tests.UsingNUnit\\obj\\",
+      "outputPath": "C:\\Users\\A236978\\Documents\\character-copy-kata\\Tests\\Unit.Tests.UsingNUnit\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -4240,8 +4240,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Development\\CharacterCopyKata\\App\\App.csproj": {
-              "projectPath": "C:\\Development\\CharacterCopyKata\\App\\App.csproj"
+            "C:\\Users\\A236978\\Documents\\character-copy-kata\\App\\App.csproj": {
+              "projectPath": "C:\\Users\\A236978\\Documents\\character-copy-kata\\App\\App.csproj"
             }
           }
         }

@@ -14,26 +14,26 @@ namespace Unit.Tests.UsingNUnit
         public void Setup()
         {
             source = new Source();
+            source.Value = "ABCDEF\n";
             destination = new Destination();
             copier = new Copier(source, destination);
         }
 
         [Test]
-        public void Test_Source_Copy_When_Copier_Copy_IsCalled()
+        public void success_when_Source_ReadChar_is_called_when_Copy_is_called()
         {
+            var expected = 'A';
             copier.Copy();
+            Assert.That(expected, Is.EqualTo(source.ReadChar()));
         }
 
         [Test]
-        public void Test_Source_Copy_With_Count_Parameter_When_Copier_Copy_IsCalled()
+        public void success_when_Destination_WriteChar_is_called_when_Copy_is_called()
         {
-            copier.Copy(2);
-        }
-
-        [Test]
-        public void Test_Source_IsCalled_With_Newline()
-        {
+            var expected = 'A';
             copier.Copy();
+            Assert.That(expected, Is.EqualTo(source.ReadChar()));
+            destination.WriteChar(source.ReadChar());
         }
     }
 }
